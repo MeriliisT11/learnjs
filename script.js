@@ -1,79 +1,67 @@
-let num = 2;
+let num = 10;
 
-console.log(num);
+if(num > 10){
+    console.log('Suurem');
+} else if(num == 10) {
+    console.log('võrdne');
+} else{
+    console.log('Väiksem');
+}
 
-num = num + 2;
+let day = 11;
 
-num = 5 + 2 * 4 / 6 - 6;
+switch(day){
+    case 0:
+    console.log('Esmaspäev');
+    break;
+case 1:
+        console.log('Teisipäev');
+        break;
+case 2:
+    console.log('Kolmapäev');
+    break;
+case 3:
+    console.log('Neljapäev');
+    break;
+case 4:
+    console.log('Reede');
+    break;
+case 5:
+case 6:
+    console.log('Nädalavahetus');
+    break;
+default:
+    console.log('Imelik päev');
+    break;
+}
 
-num += 3;
-num -= 4;
-num *= 4;
-num /= 4;
-num++;
-num--;
-num = 13 % 2;
-num = 2;
-num = num**3;
-console.log(typeof num);
-let string = 'hello world';
-string +='????'
-console.log(string);
-console.log(typeof string);
-let bool =true;
-bool = false;
+for(let i=10;i>1;i-=2){
+    console.log(i);
+}
 
-bool = false && true;
-bool = false || true;
-bool = !bool;
-bool = false && true || true && !false;
-bool = true;
-num = 10;
-bool = 2 > num;
-bool = 2 < num;
-bool = 10 < num;
-bool = 10 == num;
-bool = 10 <= num;
-bool = 10 >= num;
-bool = 10 != num;
-bool = '10' === num;
-bool = '10' !== num;
+// let minutes = new Date ().getMinutes();
+// console.log(minutes);
+// while(minutes+1 != new Date().getminutes()) {
+//     console.log('old minute');
+// }
+// console.log('new minute has started');
+let i = 1;
+while(i>10) {
+    console.log('while' + i);
+}
 
-console.log(bool);
-console.log(typeof bool);
+i = 1;
+do {
+    console.log('do' + i);
+} while (i>10);
 
-let noValue = null;
-let noValue2;
-console.log(noValue2); //undefined
-num = 0 * -1;
-num = 0.1 + 0.2;
-console.log(num);
-let array = [1, 2, 3, 4];
-array = [1, 'hello', true, undefined, null];
-console.log(array);
-console.log(array[0]);
-array[0] =7;
-console.log(array);
-array = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-console.log(array[1][2]);
-array = [ [ [ [[ 5 ]]]]];
-console.log (array[0][0][0][0][0]);
-let obj = {
-    name: 'Meri',
-    age: 18,
-    eyeColor: 'green',
-    favpets: ['cats', 'bunny', 'ducks']
-};
-console.log(obj);
-console.log(obj.name);
-console.log(obj.age);
-console.log(obj.favpets[2]);
-console.log(typeof console);
-console.log(console);
-console.log (array.length);
-console.log (string.length);
-console.log (string[0]);
+let fruits = ['apple', 'cherry', 'strawberry', 'pear', 'melon'];
+
+for(let i = 0; i<fruits.lenght; i++) {
+    console.log(fruits[i]);
+}
+
+fruits.forEach(function (fruit){
+    console.log(fruit);
+});
+
